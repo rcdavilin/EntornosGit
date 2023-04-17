@@ -2,19 +2,14 @@ package Ej;
 
 class PizzaDelivery {
 
-	  // ...
+	  private int numberOfLateDeliveries;
 
 	  int getRating() {
 
-	    return moreThanFiveLateDeliveries() ? 2 : 1;
+		  return numberOfLateDeliveries  > 5 ? 2 : 1;
 
 	  }
 
-	  boolean moreThanFiveLateDeliveries() {
-
-	    int numberOfLateDeliveries = 0;
-		return numberOfLateDeliveries  > 5;
-
-	  }
+	  
 
 	}
